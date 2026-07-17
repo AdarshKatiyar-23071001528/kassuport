@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            /* background: radial-gradient(circle at -30%, aquamarine 10%,  15%,black 17%,aquamarine); */
+            background: linear-gradient(45deg,red,rgb(88, 83, 83),gray,pink, white, aqua, skyblue);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+          
+            
+        }
+
+        nav {
+            height: 70px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            position: fixed;
+            z-index: 10;
+            box-shadow: 0 2px 15px 2px black;
+        }
+
+        .name {
+            font-size: 20px;
+        }
+
+        .option {
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 25px;
+        }
+
+        .home:hover {
+            color: plum;
+        }
+
+        .abt:hover {
+            color: plum;
+        }
+
+        .skill:hover {
+            color: plum;
+        }
+
+        .project:hover {
+            color: plum;
+        }
+
+        .contact:hover {
+            color: plum;
+        }
+
+        .home {
+            transition: all ease-in .15s;
+        }
+
+        .abt {
+            transition: all ease-in .15s;
+        }
+
+        .skill {
+            transition: all ease-in .15s;
+        }
+
+        .project {
+            transition: all ease-in .15s;
+        }
+
+        .contact {
+            transition: all ease-in .15s;
+        }
+
+        .btn1 {
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            /* background: radial-gradient(circle at -30%, aquamarine 10%,  15%,black 17%,aquamarine); */
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 0 0 0;
+            
+        }
+
+        .all {
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: blue; */
+            color: white;
+            position: relative;
+
+        }
+
+        .image1 {
+            height: 400px;
+            width: 400px;
+            /* background-color: brown; */
+            border-radius: 50%;
+        }
+
+
+        .details {
+            height: 300px;
+            width: 600px;
+            /* background-color: pink; */
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            padding: 0 0 0 20px;
+        }
+
+        .actionBtn {
+            display: flex;
+            gap: 10px;
+            padding-left: 60px;
+        }
+
+        .actionBtn button {
+
+            outline: none;
+            background: none;
+            border: none;
+            /* border: 1px solid black; */
+            padding: 10px 60px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-wrap: nowrap;
+            
+            
+
+        }
+
+
+        .actionBtn .first {
+            background-color: red;
+        }
+
+        .actionBtn .second {
+            background-color: blue;
+        }
+    
+
+        .subDetails h1 {
+            font-size: 45px;
+         
+        }
+
+        .subDetails h3 {
+            font-size: 40px;
+         
+        }
+
+        .subDetails p {
+            font-size: 23px;
+            
+        }
+        .subDetails{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color:black;
+            padding-left: 60px;
+            
+            
+
+        }
+
+    
+
+        .about {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            background: radial-gradient(circle at 15%,gray 7%, aqua 12%, transparent 15% );
+           
+
+        }
+
+        .aboutContainer {
+            height: 90%;
+            width: 90%;
+            /* border: 1px solid gray; */
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .content {
+            height: 100%;
+            width: 50%;
+            /* background-color: yellow; */
+            padding: 30px 0 30px 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: white;
+            font-size: 22px;
+        }
+
+        .image2{
+            height: 90%;
+            width: 300px;
+            
+        }
+        .image2 img{
+            height: 120%;
+            width: 120%;
+            object-fit: cover;
+
+            &:hover{
+                box-shadow: 0 0 10px 10px black;
+            }
+        }
+
+        .image1 {
+            height: 400px;
+            width: 400px;
+
+        }
+
+        .image1 img {
+            height: 420px;
+            width: 420px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+            transform: rotate(-25deg);
+            box-shadow: 0 0 40px 15px aquamarine;
+        }
+        .readButton button{
+            padding: 5px 20px;
+        }
+        .textcontent p{
+            padding-top: 50px;
+         font-size: 18px;
+        }
+        .icon{
+            display: flex;
+            
+        }
+     .firstIcon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 20px;
+            /* background-color: red; */
+            
+        }
+        
+        .mySkill{
+            height: 100%;
+            width: 100%;
+            font-size: 25px;
+            background-color: rgba(70, 163, 163, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 29px 30px;
+            gap: 20px;
+            /* align-items: center; */
+        }
+
+        .forCenter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .fullHeight{
+            height: 100%;
+            width: 100%;
+        }
+        .linear{
+            height: 450px;
+            width: 45%;
+            border-radius: 10%;
+            /* background-color: rgb(103, 108, 187); */
+            flex-direction: column;
+            box-shadow: 0 0 10px 5px black, inset 0 0 10px 5px white;
+           
+            
+
+        }
+        .linear-details{
+            height: 80%;
+            width: 90%;
+            /* background-color: red; */
+            padding: 20px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+         
+        }
+        .skillCantainer{
+            height: 80%;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .circle{
+            height: 450px;
+            width: 45%;
+            /* background-color:  rgb(103, 108, 187); */
+            border-radius: 10%;
+            padding: 20px 60px;
+            flex-direction: column;
+            gap:20px;
+            box-shadow:  0 0 10px 5px black, inset 0 0 10px 5px white;
+        } 
+        .contact-Container{
+            height: 100%;
+            width: 100%;
+            background: radial-gradient(circle at 20%, rgba(255, 0, 0, 0.287) 10%, blue 15%, aqua 20%, transparent 20%); 
+            position: relative;
+        }
+        .contact-sub{
+            height: 340px;
+            width: 460px;
+            background-color: rgba(255, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+        .moving-Container{
+            height: 600px;
+            width: 700px;
+            position: absolute;
+            filter: blur(10px);
+            background: conic-gradient(aqua 0deg, aqua 45deg, transparent 45deg, transparent 180deg, aqua 180deg, aqua 225deg, transparent 225deg);
+            animation: moving 3s infinite linear;
+            /* background-color: blue;*/
+        }
+
+        @keyframes moving {
+                0%{
+                    transform: rotate(0deg);
+                }
+                50%{
+                    transform: rotate(180deg);
+                }
+                100%{
+                    transform: rotate(0deg);
+                }
+
+        }
+        .contact-details{
+            height: 330px;
+            width: 450px;
+            position: absolute;
+            background-color: black;
+        }
+        .project-Container{
+            height: 100%;
+            width: 100%;
+            /* background-color: aqua; */
+        }
+        .all-project{
+            height:90%;
+            width: 90%;
+            /* background-color: beige; */
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .project1-Container, .project2-Container, .project3-Container{
+            height: 90%;
+            width: 30%;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-around;
+        }
+        .project1, .project2, .project3, .project4,.project5,.project6{
+            height:40%;
+            width: 70%;
+            /* background-color: yellow; */
+            box-shadow: 5px 5px 15px 5px;
+            transform: skewY(-30deg);
+            transition: all ease-in 1s;
+            position: relative;
+
+            &:hover{
+                transform: skewX(0deg);
+            }
+        }
+        .project1 h1,.project2 h1, .project3 h1, .project4 h1, .project5 h1, .project6 h1{
+            position: absolute;
+            bottom :  30px;
+            font-size: 90px;
+            right: -80px;
+            color: royalblue;
+            text-shadow: 4px 4px 10px black;
+        }
+        .project1,.project2{
+            z-index: 6;
+        }
+        .project3,.project4{
+            z-index:5;
+        }
+        .project1 img, .project2 img,.project3 img,.project4 img, .project5 img,.project6 img{
+            height:100%;
+            width:100%;
+        }
+
+        .html-linear{
+            height: 20px;
+            width: 90%;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            position: relative;
+        }
+        .html-linear::after{
+            position:absolute;
+            content:'';
+            height: 20px;
+            background-color: rgb(19, 244, 244);
+            border-radius: 10px;
+            animation: html-move 2s ease-in;
+            width: 50%;
+            
+
+        }
+        .linear-details p{
+            font-size: 20px;
+            font-weight: 700;
+           
+        }
+        @keyframes html-move{
+            from{
+                width: 0%;
+            }
+            to{
+                width: 50%;
+            }
+        }
+        .css-linear,.css-moving-part{
+            height: 20px;
+            width: 90%;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+        .css-moving-part{
+            background-color: aqua;
+            animation:css-moving 2s ease-in;
+            width: 50%;
+            text-align: right;
+            padding: 0 10px 0 0;
+            
+        }
+        @keyframes css-moving {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 50%;
+            }
+        }
+
+        .c-linear,.c-moving-part{
+            height: 20px;
+            width: 90%;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .c-moving-part{
+            width: 20%;
+            background-color: aqua;
+            animation: c-moving 2s ease-in;
+            text-align: right;
+            padding: 0 10px 0 0;
+        }
+        @keyframes c-moving{
+            from{
+                width:0%;
+            }
+            to{
+                widht:20%;
+            }
+        }
+        .cpp-linear,.cpp-moving-part{
+            height: 20px;
+            width: 90%;
+            background-color:black;
+            border-radius: 10px;
+        }
+        .cpp-moving-part{
+            width: 20%;
+            background-color:aqua;
+            animation: cpp-move 1s ease-in;
+            text-align: right;
+        }
+        .cpp-moving-part p{
+            font-size: 17px;
+        }
+        @keyframes cpp-move{
+            from{
+                width:0%;
+            }
+            to{
+                width:20%;
+            }
+        }
+        .circle-details{
+            height: 80%;
+            width: 90%;
+            display: flex;
+            /* background-color: red; */
+        }
+        .html-circle{
+            height: 150px;
+            width:150px;
+            /* background-color: aqua; */
+            border-radius: 50%;
+            background:conic-gradient(red 180deg , black 180deg);
+            animation: html-circle-move 2s ease-in;
+        }
+        @keyframes html-circle-move {
+            0%{
+                background:conic-gradient(red 0deg , black 0deg);
+            }
+            20%{
+                background:conic-gradient(red 36deg , black 36deg);
+            }
+            40%{
+                background:conic-gradient(red 72deg , black 72deg);
+            }
+            60%{
+                background:conic-gradient(red 108deg , black 108deg);
+            }
+            80%{
+                background:conic-gradient(red 144deg , black 144deg);
+            }
+            100%{
+                background:conic-gradient(red 180deg , black 180deg);
+            }
+        }
+        .html-circle-movingPart,.css-circle-movingPart,.c-circle-movingPart,.cpp-circle-movingPart{
+            height: 60%;
+            width: 60%;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px black;
+        }
+        .css-circle,.c-circle,.cpp-circle{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background:conic-gradient(red 180deg, black 180deg);
+            animation: html-circle-move 2s ease-in;
+        }
+        .circle-firstContainer,.circle-SecondContainer{
+            /* background-color: aqua; */
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .c-circle,.cpp-circle{
+            background:conic-gradient(red 100deg, black 100deg);
+            animation: c-circle-move 2s ease-in;
+        }
+        @keyframes c-circle-move {
+            0%{
+                 background:conic-gradient(red 0deg, black 0deg);
+            }
+            20%{
+                 background:conic-gradient(red 20deg, black 20deg);
+            }
+            40%{
+                 background:conic-gradient(red 40deg, black 40deg);
+            }
+            60%{
+                 background:conic-gradient(red 60deg, black 60deg);
+            }
+            80%{
+                 background:conic-gradient(red 80deg, black 80deg);
+            }
+            100%{
+                 background:conic-gradient(red 100deg, black 100deg);
+            }
+        }
+        .certificate{
+            height: 100%;
+            width: 100%;
+            /* background-color: red; */
+        }
+        .certificate-Container{
+            height: 90%;
+            width:90%;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .card{
+            height: 290px;
+            width: 230px;
+            border-radius: 10px;
+            /* background-color: blue; */
+            position: relative;
+            transition: all 2s ease-in;
+            transform-style: preserve-3d;
+            box-shadow: 0 0 20px 10px black,
+            inset 0 0 4px 5px white;
+        }
+        .rotate{
+            height: 290px;
+            width:230px;
+            border-radius: 10px;
+            position: absolute;
+            backface-visibility: hidden;
+         
+        }
+   
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        
+
+   
+        .face2,.face3,.face4,.face1{
+            background-color: rgba(12, 12, 12, 0.42);
+            padding: 10px;
+            
+            
+        }
+        .back2,.back3,.back4,.back1{
+           background-color: rgba(12, 12, 12, 0.42);
+            transform: rotateY(180deg);
+        }
+        .back1 p{
+            color: white;
+        }
+        
+        .option a{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: violet;
+            }
+        }
+        .name a{
+            text-decoration: none;
+        }
+        #htmlIcon,#css-Icon,#c-Icon,#cpp-Icon{
+            height: 100px;
+            width: 100px;
+        }
+        .contact-details{
+            color: white;
+            padding:20px;
+        }
+        .contact-details h1{
+            text-align: center;
+
+        }
+        .contact-details form{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+        .contact-details form input{
+            width: 100%;
+           background: none;
+           outline: none;
+           border:none;
+           border-bottom: 1px solid grey;
+           padding:0 0 0 10px;
+           color: grey;
+        }
+        .contact-details button{
+            width: 100%;
+            background: blue;
+            outline: none;
+            border: none;
+            padding:10px 0px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 2px;
+            box-shadow:  0 0 10px 1px;
+            transition: all .3s ease-in;
+
+            &:hover{
+                transform: scale(1.02);
+                background:green;
+            }
+        }
+
+        .contact-Container .icon1{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: grey;
+            right: 100px;
+
+        }
+       
+
+       
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="name">
+            <a href="#home">
+            <h1>Kashish <span style="color: purple;">sharma</span></h1>
+            </a>
+        </div>
+        <div class="option">
+            <div class="home"><a href="#home">Home</a>
+            </div>
+            <div class="abt"><a href="#about">About</a></div>
+            <div class="skill"><a href="#skill">Skills</a></div>
+            <div class="certificate"><a href="#certificate">Certificate</a></div>
+            <div class="project"><a href="#project">Project</a></div>
+            <div class="contact"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="btn1"><button>On</button></div>
+    </nav>
+    <main id="home">
+        <div class="all" >
+            <div class="image1">
+                <img src="kassu.jpg" alt="">
+            </div>
+            <div class="details">
+                <div class="subDetails">
+                    <h1>Hi, I'm Kashish Sharma</h1>
+                    <h3>Frontend Developer</h3>
+                    <p>Now, I am persuing BCA from SKIT</p>
+                </div>
+                <div class="actionBtn">
+                    <button class="first">My Project</button>
+                    <button class="second">Download cv</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+        <!-- About -->
+        <div class="about" id="about">
+            <div class="aboutContainer">
+                <div class="content">
+                    <div class="textcontent">
+                        <h1>A <span style="color: blueviolet;">Bit</span></h1>
+                        <h2> <span style="color: rgb(207, 51, 137);">ABOUT Me</span></h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae maxime ratione
+                            cumque, in impedit excepturi reiciendis obcaecati eveniet iure quod error dolore.</p>
+                    </div> 
+                    <div class="readButton">
+                        <button>Read More</button>
+                    </div>  
+                    <div class="icon">
+                            <div class="firstIcon">
+                                <div class="icon1">
+                                <h5>
+                                    <span class="material-symbols-outlined">work_history</span>
+                                    <span style="color: blue;">0year+</span>
+                                </h5>
+                                <h6>Experience</h6>
+                            </div>
+                            
+                            <div class="icon2">
+                                <h5>
+                                    <span class="material-symbols-outlined">support_agent</span>
+                                    <span style="color: blue;">24/7</span>
+                                </h5>
+                                   
+                                <h6>Customer support</h6>
+                               
+                            <div>
+                          </div>
+                            
+                            </div>
+
+                           </div>
+                           <div class="secondIcon">
+                            <div class="icon3">
+                                <h5><span class="material-symbols-outlined">
+rocket
+</span> <span style="color: blue;">5+</span> </h5>
+                                
+                                <h6>Project</h6>
+                            </div>
+                           </div>
+                    </div>
+                </div>
+                <div class="image2">
+                    <img src="sec.png" alt="image" id="second-Img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill -->
+        <div class="mySkill" id="skill">
+             <h1>MY <span style="color: purple;"> SKILL</span></h1>
+            <div class="skillCantainer">
+                <div class="linear forCenter">
+                    <h3>Linear presentation</h3>
+                    <div class="linear-details">
+                        <div>
+                        <p>Html</p>
+                        <div class="html-linear">
+                        </div>
+                        </div>
+                        <div>
+                            <p>CSS</p>
+                            <div class="css-linear">
+                            <div class="css-moving-part">
+                                <p>50%</p>
+                            </div>
+                        </div>
+
+                        </div>
+                        
+                        <div>
+                            <p>C</p>
+                             <div class="c-linear">
+                                <div class="c-moving-part">
+                                    <p>10%</p>
+                                </div>
+                             </div>
+                        </div>
+                        
+                       <div>
+                            <p>C++</p>
+                            <div class="cpp-linear">
+                                <div class="cpp-moving-part">
+                                        <p>20%</p>
+                                </div>
+                            </div>
+                       </div>
+
+                        
+
+
+                    </div>
+                </div>
+                <div class="circle forCenter">
+                    <h3>circle presentation</h3>
+                    <div class="circle-details">
+                        <div class="circle-firstContainer">
+                            <div class="html-circle forCenter">
+                            <div class="html-circle-movingPart forCenter">
+                                <p>HTML</p>
+                            </div>
+                            </div>
+
+                            <div class="css-circle forCenter">
+                            <div class="css-circle-movingPart forCenter">
+                                <p>CSS</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="circle-SecondContainer">
+                            <div class="c-circle forCenter">
+                                <div class="c-circle-movingPart forCenter">
+                                    <p>C</p>
+                                </div>
+                            </div>
+                            <div class="cpp-circle forCenter">
+                                <div class="cpp-circle-movingPart forCenter">
+                                    <p>CPP</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Certificate Container -->
+         <div class="certificate forCenter" id="certificate">
+            <div class="certificate-Container">
+                <div class="card1 card">
+                    <div class="face1 rotate forCenter">
+                        <img src="icons8-html-5-50.png" alt="" id="htmlIcon">
+                    </div>
+                    <div class="back1 rotate forCenter">
+                        <p>Hyper Text Markup Language</p>
+                    </div>
+                </div>
+                <div class="card2 card">
+                    <div class="face2 rotate forCenter">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/960px-CSS3_logo.svg.png?_=20210705212817" alt="" id="css-Icon">
+                    </div>
+                    <div class="back2 rotate"></div>
+                </div>
+                <div class="card3 card">
+                    <div class="face3 rotate forCenter">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/C_Logo.png/250px-C_Logo.png" alt="" id="c-Icon">
+                    </div>
+                    <div class="back3 rotate"></div>
+                </div>
+                <div class="card4 card">
+                    <div class="face4 rotate forCenter">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/330px-ISO_C%2B%2B_Logo.svg.png?_=20170928190710" alt="" id="cpp-Icon">
+                    </div>
+                    <div class="back4 rotate"></div>
+                </div>
+            </div>
+         </div>
+
+
+        <div class="project-Container forCenter" id="project">
+            <div class="all-project">
+                <div class="project1-Container">
+                    <div class="project1">
+                        <h1>01</h1>
+                        <img src="porfolio.jpg" alt="">
+                    </div>
+                    <div class="project2">
+                        <h1>02</h1>
+                        <img src="https://repository-images.githubusercontent.com/687070251/3d7bf6dd-d039-4d21-bba7-a0ccc4c99d6a" alt="">
+                    </div>
+                </div>
+                <div class="project2-Container">
+                    <div class="project3">
+                        <h1>03</h1>
+                        <img src="https://repository-images.githubusercontent.com/621657746/73fdccdd-9a96-498b-b6d4-bed0708eb663" alt="">
+                    </div>
+                    <div class="project4">
+                        <h1>04</h1>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240125180753/Screenshot-2024-01-25-125829.jpg" alt="">
+                    </div>
+                </div>
+                <div class="project3-Container">
+                    <div class="project5">
+                        <h1> 05 </h1>
+                        <img src="https://www.coolmathgames.com/sites/default/files/Snake_OG-logo.jpg" alt="">
+                    </div>
+                    <div class="project6">
+                        <h1> 06 </h1>
+                        <img src="https://repository-images.githubusercontent.com/456963513/82528385-a73f-488f-9003-513321283a6b" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact-Container forCenter" id="contact">
+            <div class="icon1"></div>
+            <div class="contact-sub forCenter">
+                <div class="moving-Container">
+                </div>
+                <div class="contact-details">
+                    <h1>Contact Form</h1>
+                    <form action="" method="post"> 
+                        <input type="text" name="name" id="" placeholder="Enter Your Name">
+                        <input type="email" name="email" id="" placeholder="Enter Your Email">
+                        <input type="text" name="feedback" id="" placeholder="Enter Your Feedback">
+                        <button>Submit</button>
+
+                    </form>
+                   
+                </div>
+
+            </div>
+        </div>
+        
+
+
+
+</body>
+
+</html>
