@@ -816,7 +816,7 @@
                 gap:0px;
                 padding-left: 0px;
             }
-            .details .subDetails h1,h3{
+            .details .subDetails h1,.details .subDetails h3{
                 font-size: 25px;
             }
             .subDetails p {
