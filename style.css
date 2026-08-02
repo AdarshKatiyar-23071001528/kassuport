@@ -51,6 +51,12 @@
             gap: 20px;
             font-size: 25px;
         }
+        @media (max-width: 767px) {
+            .option{
+                gap:5px;
+            }
+
+        }
 
         .nav-scale:hover {
             transform: scale(1.1);
@@ -89,6 +95,12 @@
             align-items: center;
        
             
+        }
+
+        @media (max-width: 767px) {
+            main{
+                padding-bottom: 30px;
+            }
         }
 
         .all {
@@ -221,11 +233,15 @@
             color: white;
             font-size: 22px;
         }
+        @media (max-width:767px) {
+            .content{
+                width: 70%;
+                gap:10px;
+            }
+        }
 
         .image2{
-            height: 90%;
-       
-            
+            height: 90%;        
         }
         .image2 img{
             height: 120%;
@@ -666,12 +682,12 @@
         .option a{
             letter-spacing: 3px;
             text-decoration: none;
-            color: black;
-            text-shadow: 1px 1px green,
+            color: green;
+            /* text-shadow: 1px 1px green,
                 -1px -1px green,
                 1px -1px green,
                 -1px 1px green
-                ;
+                ; */
             transition: all 1s ease-in;
                 &:hover{
                     color:rgba(0, 128, 0, 0.806);
@@ -679,8 +695,8 @@
         }
         @media (max-width:767px) {
             .option a{
-                
-                font-size: 16px;
+                letter-spacing: 0px;
+                font-size: .9rem;
                
             }
         }
@@ -797,16 +813,24 @@
             .details .subDetails{
                 padding-top:20px;
                 align-items: center;
-                gap:10px;
+                gap:0px;
                 padding-left: 0px;
             }
             .details .subDetails h1,h3{
-                font-size: 40px;
+                font-size: 25px;
+            }
+            .subDetails p {
+                font-size: 16px;
             }
             .actionBtn{
+                padding-top:10px;
                 padding-left:0px;
                 align-items: center;
                 justify-content: center;
+                
+            }
+            .actionBtn button{
+                padding: 10px 40px;
             }
         }
 
@@ -824,13 +848,22 @@
             .textcontent p {
                 padding-top: 10px;
             }
+
+            .textcontent h2{
+                text-wrap: nowrap;
+                /* background-color: aliceblue; */
+            }
             .readButton{
                 align-items: center;
                 justify-content: center;
                 display: flex;
                 
             }
-
+            .readButton button{
+                text-wrap: nowrap;
+                /* without wrap text will be set */
+                padding: 5px 50px;
+            }
         }
 
          @media (max-width: 767px) {
