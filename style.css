@@ -956,3 +956,18 @@
                 right:-40px;
             }
         }
+
+   @media (max-width: 767px) {
+            .contact-sub{
+                height: 340px;
+                width:290px;
+            }
+            .moving-Container{
+                height: 400px;
+                width: 500px;
+            }
+            .contact-details{
+                height: 330px;
+                width: 280px;
+            }
+        }
